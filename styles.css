@@ -1,42 +1,40 @@
 body {
     background: url('bg.png') no-repeat top center fixed; /* Change background image to bg.png and fix its vertical position */
     background-size: cover; /* Ensure the background image covers the entire page */
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
     margin: 0;
     padding: 0;
+    width: auto !important;
+    min-width:320px;
 }
 
-.left, .right {
-    width: 50%;
+
+.wrapper {
+    display: flex;
+    wdith:100%;
+    padding: 50px 0px 50px 0px;
 }
 
 .left {
-    height:100%;
+    width: 50%;
     background: none;
 }
 
 .right {
+    width: 50%;
     background: none;
 }
 
 .container {
     background-color: rgba(255, 255, 255, 0.85); /* Lessen transparency */
-    padding: 20px;
+    padding: 30px 20px 20px 20px;
     border-radius: 10px;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.7); /* Increase shadow size and make it darker */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7); /* Increase shadow size and make it darker */
     text-align: center;
     width: 300px;
-    margin-top: 50px; /* Increase top margin by 30px */
-    margin-bottom: 50px; /* Set bottom margin to match top margin */
-    position: absolute;
-    left: 50%;
-    margin-left: 0px; /* Set margin-left to 0px */
-    margin-bottom: 50px;
 }
 
 .profile-pic {
+    background: url('profile2.png') no-repeat center fixed;
     width: 150px; /* Increase width */
     height: 150px; /* Increase height */
     border-radius: 50%; /* Make the image a circle */
@@ -99,14 +97,20 @@ p {
 
 .hidden .close a:hover {
     background-color: #a93226;
+    color: #fff;
+    text-decoration: none;
 }
 
 .hidden .close a.dark-red {
     background-color: #8b0000;
+    color: #fff;
+    text-decoration: none;
 }
 
 .hidden .close a.dark-red:hover {
     background-color: #660000;
+    color: #fff;
+    text-decoration: none;
 }
 
 .hidden {
@@ -165,14 +169,125 @@ padding:0;
 }
 
 
+/* Extra small devices (phones, 680px and down) */
+@media only screen and (max-width: 680px) {
 
-
-
-
-
-.bottom {
-    width: 100%;
-    background: none;
-    position: absolute;
-    bottom: 0px;
+body {
+    background: url('bgmx600.png') no-repeat top center fixed; /* Change background image to bg.png and fix its vertical position */
+    background-size: cover; /* Ensure the background image covers the entire page */
+    margin: 0;
+    padding: 0;
+    width: auto !important;
+    min-width:320px;
 }
+
+
+.wrapper {
+    display: flex;
+    wdith:100%;
+    padding: 20px 20px 20px 20px;
+}
+
+.left {
+display:none;
+}
+
+.right {
+width:100%;
+margin: 0 auto;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 8% 6% 6% 6%;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin: 0 auto;
+    width:88%;
+min-width:300px;
+}
+}
+
+@media only screen and (min-width: 680px)
+{
+
+body {
+    background: url('bgmn600.png') no-repeat top center fixed; /* Change background image to bg.png and fix its vertical position */
+    background-size: cover; /* Ensure the background image covers the entire page */
+    margin: 0;
+    padding: 0;
+    width: auto !important;
+    min-width:320px;
+}
+
+.wrapper {
+    display: flex;
+    wdith:100%;
+    padding: 0px 0px 0px 0px;
+}
+
+.left {
+    width: 50%;
+    background: none;
+}
+
+.right {
+    width: 50%;
+    background: none;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.85); /* Lessen transparency */
+    padding: 8% 6% 6% 6%;
+    border-radius: 0px;
+    box-shadow: -25px 0px 20px -20px rgba(0,0,0,0.45);
+    text-align: center;
+    width: 88%;
+}
+
+
+}
+
+@media only screen and (min-width: 801px) {
+
+body {
+    background: url('bg.png') no-repeat top center fixed; /* Change background image to bg.png and fix its vertical position */
+    background-size: cover; /* Ensure the background image covers the entire page */
+    margin: 0;
+    padding: 0;
+    width: auto !important;
+    min-width:320px;
+}
+
+
+.wrapper {
+    display: flex;
+    wdith:100%;
+    padding: 50px 0px 50px 0px;
+}
+
+.left {
+    width: 50%;
+    background: none;
+}
+
+.right {
+    width: 50%;
+    background: none;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.85); /* Lessen transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7); /* Increase shadow size and make it darker */
+    text-align: center;
+    width: 300px;
+}
+
+}
+
+
+
+
