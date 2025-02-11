@@ -205,11 +205,11 @@ margin: 0 auto;
     text-align: center;
     margin: 0 auto;
     width:88%;
-min-width:300px;
+    min-width:300px;
 }
 }
 
-@media only screen and (min-width: 680px)
+@media only screen and (min-width: 681px)
 {
 
 body {
