@@ -170,7 +170,7 @@ padding:0;
 
 
 /* Extra small devices (phones, 680px and down) */
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 412px) {
 
 body {
     background: url('bgmx600.png') no-repeat top center fixed; /* Change background image to bg.png and fix its vertical position */
@@ -189,7 +189,7 @@ body {
 }
 
 .left {
-width:0;
+width:0%;
 }
 
 .right {
@@ -205,16 +205,57 @@ margin: 0 auto;
     text-align: center;
     margin: 0 auto;
     width:88%;
-    min-width:300px;
-}
+min-width:300px;
 }
 
-@media only screen and (min-width: 681px)
-{
+}
+
+
+
+@media only screen and (min-width: 413px) {
 
 body {
-    background: url('bgmn600.png') no-repeat top center fixed; /* Change background image to bg.png and fix its vertical position */
+    background: url('bgmx600.png') no-repeat top center fixed; /* Change background image to bg.png and fix its vertical position */
     background-size: cover; /* Ensure the background image covers the entire page */
+    margin: 0;
+    padding: 0;
+    width: auto !important;
+    min-width:320px;
+}
+
+
+.wrapper {
+    display: flex;
+    wdith:100%;
+    padding: 30px 30px 30px 30px;
+}
+
+.left {
+width:0%;
+}
+
+.right {
+width:100%;
+margin: 0 auto;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 12% 9% 9% 9%;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin: 0 auto;
+    width:82%;
+min-width:300px;
+}
+}
+
+@media only screen and (min-width: 680px) {
+
+body {
+    background: url('bgmn600.png') no-repeat top center fixed;
+    background-size: cover;
     margin: 0;
     padding: 0;
     width: auto !important;
@@ -238,7 +279,7 @@ body {
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.85); /* Lessen transparency */
+    background-color: rgba(255, 255, 255, 0.85);
     padding: 8% 6% 6% 6%;
     border-radius: 0px;
     box-shadow: -25px 0px 20px -20px rgba(0,0,0,0.45);
