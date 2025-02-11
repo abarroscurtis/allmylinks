@@ -166,11 +166,13 @@ text-align:justify;
 margin: 20px 0px 0px 0px;
 font-size:10px;
 padding:0;
+height: 100%;
 }
 
 
-/* Extra small devices (phones, 680px and down) */
-@media only screen and (max-width: 412px) {
+
+/* Mobile Phones */
+@media only screen and (max-width: 479px) {
 
 body {
     background: url('bgmx600.png') no-repeat top center fixed; /* Change background image to bg.png and fix its vertical position */
@@ -184,8 +186,7 @@ body {
 
 .wrapper {
     display: flex;
-    wdith:100%;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
 }
 
 .left {
@@ -199,20 +200,24 @@ margin: 0 auto;
 
 .container {
     background-color: rgba(255, 255, 255, 0.85);
-    padding: 8% 6% 6% 6%;
+    padding: 10% 5% 5% 5%;
     border-radius: 10px;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
     text-align: center;
     margin: 0 auto;
-    width:88%;
+    width:90%;
 min-width:300px;
 }
+.container #footnote {
+margin: 20px 0px 0px 0px;
+font-size:10px;
+padding:0;
+height:100%;
+}
 
 }
 
-
-
-@media only screen and (min-width: 413px) {
+@media only screen and (min-width: 480px) {
 
 body {
     background: url('bgmx600.png') no-repeat top center fixed; /* Change background image to bg.png and fix its vertical position */
@@ -226,8 +231,7 @@ body {
 
 .wrapper {
     display: flex;
-    wdith:100%;
-    padding: 30px 30px 30px 30px;
+    padding: 30px;
 }
 
 .left {
@@ -241,17 +245,23 @@ margin: 0 auto;
 
 .container {
     background-color: rgba(255, 255, 255, 0.85);
-    padding: 12% 9% 9% 9%;
+    padding: 10% 10% 10% 10%;
     border-radius: 10px;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
     text-align: center;
     margin: 0 auto;
-    width:82%;
+    width:80%;
 min-width:300px;
+}
+.container #footnote {
+margin: 20px 0px 0px 0px;
+font-size:10px;
+padding:0;
+height:100%;
 }
 }
 
-@media only screen and (min-width: 680px) {
+@media only screen and (min-width: 720px) {
 
 body {
     background: url('bgmn600.png') no-repeat top center fixed;
@@ -264,7 +274,7 @@ body {
 
 .wrapper {
     display: flex;
-    wdith:100%;
+    width:100%;
     padding: 0px 0px 0px 0px;
 }
 
@@ -287,10 +297,24 @@ body {
     width: 88%;
 }
 
+.container #footnote {
+margin: 20px 0px 0px 0px;
+font-size:10px;
+padding:0;
+height:100svh;
 
 }
+.container #footnote {
+margin: 20px 0px 0px 0px;
+font-size:10px;
+padding:0;
+height: 100%;
+flex: 1 1 auto;
 
-@media only screen and (min-width: 801px) {
+}
+}
+
+@media only screen and (min-width: 1025px) {
 
 body {
     background: url('bg.png') no-repeat top center fixed; /* Change background image to bg.png and fix its vertical position */
@@ -304,7 +328,7 @@ body {
 
 .wrapper {
     display: flex;
-    wdith:100%;
+    width:100%;
     padding: 50px 0px 50px 0px;
 }
 
@@ -325,6 +349,15 @@ body {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7); /* Increase shadow size and make it darker */
     text-align: center;
     width: 300px;
+margin:0;
+}
+
+.container #footnote {
+margin: 20px 0px 0px 0px;
+font-size:10px;
+padding:0;
+height:100%;
+
 }
 
 }
