@@ -175,7 +175,7 @@ height: 100%;
 @media only screen and (max-width: 479px) {
 
 body {
-    background: url('bgmx600.png') no-repeat top center fixed; /* Change background image to bg.png and fix its vertical position */
+    background: url('bgmx600.png') no-repeat top center; /* Change background image to bg.png and fix its vertical position */
     background-size: cover; /* Ensure the background image covers the entire page */
     margin: 0;
     padding: 0;
