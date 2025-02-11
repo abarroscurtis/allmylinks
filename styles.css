@@ -189,7 +189,7 @@ body {
 }
 
 .left {
-display:none;
+width:0;
 }
 
 .right {
