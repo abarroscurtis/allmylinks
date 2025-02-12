@@ -1,5 +1,5 @@
 body {
-    background: url('bg.png') no-repeat top center fixed; /* Change background image to bg.png and fix its vertical position */
+    background: url('bg.png') no-repeat top center; /* Change background image to bg.png and fix its vertical position */
     background-size: cover; /* Ensure the background image covers the entire page */
     margin: 0;
     padding: 0;
@@ -220,7 +220,7 @@ height:100%;
 @media only screen and (min-width: 480px) {
 
 body {
-    background: url('bgmx600.png') no-repeat top center fixed; /* Change background image to bg.png and fix its vertical position */
+    background: url('bgmx600.png') no-repeat top center; /* Change background image to bg.png and fix its vertical position */
     background-size: cover; /* Ensure the background image covers the entire page */
     margin: 0;
     padding: 0;
@@ -264,7 +264,7 @@ height:100%;
 @media only screen and (min-width: 720px) {
 
 body {
-    background: url('bgmn600.png') no-repeat top center fixed;
+    background: url('bgmn600.png') no-repeat top center;
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -317,7 +317,7 @@ flex: 1 1 auto;
 @media only screen and (min-width: 1025px) {
 
 body {
-    background: url('bg.png') no-repeat top center fixed; /* Change background image to bg.png and fix its vertical position */
+    background: url('bg.png') no-repeat top center; /* Change background image to bg.png and fix its vertical position */
     background-size: cover; /* Ensure the background image covers the entire page */
     margin: 0;
     padding: 0;
