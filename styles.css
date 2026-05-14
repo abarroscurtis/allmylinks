@@ -288,8 +288,7 @@ height:100%;
 }
 
 .profile-pic {
-    background: url('profile.png') no-repeat center center;
-    background-size: cover;
+background-image: url('profile.png')
 }
     
 }
