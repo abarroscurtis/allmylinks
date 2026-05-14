@@ -42,13 +42,15 @@ body {
 }
 
 .profile-pic {
-    background: url('profile2.png') no-repeat center fixed;
-    width: 150px; /* Increase width */
-    height: 150px; /* Increase height */
-    border-radius: 50%; /* Make the image a circle */
-    border: 10px solid #9F0029; /* Add a border */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a shadow */
+    background: url('profile2.png') no-repeat center center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px solid #9F0029;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin-bottom: 10px;
+    box-sizing: border-box;
 }
 
 h1 {
