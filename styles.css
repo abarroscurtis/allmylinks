@@ -1,12 +1,20 @@
 body {
-    background: url('bg.png') no-repeat top center; /* Change background image to bg.png and fix its vertical position */
-    background-size: cover; /* Ensure the background image covers the entire page */
     margin: 0;
     padding: 0;
     width: auto !important;
-    min-width:320px;
+    min-width: 320px;
 }
 
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('bg.png') no-repeat top center;
+    background-size: cover;
+    z-index: -1;
+}
 
 .wrapper {
     display: flex;
@@ -75,16 +83,38 @@ p {
 }
 
 .links a.dark-red {
-    background-color: #8b0000; /* Dark red shade for top two links */
+    background-color: #9F0029; /* Dark red shade for top two links */
 }
 
 .links a.dark-red:hover {
-    background-color: #660000; /* Even darker red shade for top two links */
+    background-color: #4F0014; /* Even darker red shade for top two links */
 }
+
+
+
+/* Reverse red button */
+.links a.red {
+    background-color: #72001D; /* current hover colour */
+}
+
+.links a.red:hover {
+    background-color: #4F0014; /* current normal colour */
+}
+
+
+/* Reverse red button 2 */
+.links a.red2 {
+    background-color: #E4003B; /* current hover colour */
+}
+
+.links a.red2:hover {
+    background-color: #72001D; /* current normal colour */
+}
+
 
 .hidden .close a{
     display: block;
-    background-color: #c0392b;
+    background-color: #9F0029;
     color: #fff;
     padding: 5px;
     margin: 10px 0px 0px 0px;
@@ -96,7 +126,7 @@ p {
 }
 
 .hidden .close a:hover {
-    background-color: #a93226;
+    background-color: #4F0014;
     color: #fff;
     text-decoration: none;
 }
@@ -131,6 +161,9 @@ p {
     display: block;
 }
 
+#surveys:target {
+    display: block;
+}
 
 .hidden a {
     background: none;
@@ -144,6 +177,7 @@ p {
     font-family: Georgia, serif;
     box-shadow: 0;
     box-shadow: 0 0 0px rgba(0, 0, 0, 0.0);
+text-transform:none;
 }
 
 .hidden a:hover {
@@ -162,6 +196,42 @@ text-decoration: underline;
 text-align:justify;
 }
 
+#bio {
+text-align:justify;
+font-size:16px;
+}
+
+.titles {
+color:#000;
+font-weight: bold;
+}
+
+#parlink {
+color:#9F0029;
+text-transform: none;
+ display: inline;
+}
+
+#parlink a:hover {
+text-transform: underline;
+}
+
+
+#text-lists {
+font-size:1em;
+text-align: left;
+text-transform:underline;
+color: #9F0029;
+margin-bottom: 20px;
+font-family: Georgia, serif; /* Change bio font to Georgia */
+line-height:1.5;
+}
+
+#text-lists a {
+text-transform:underline;
+color: #9F0029;
+}
+
 .container #footnote {
 margin: 20px 0px 0px 0px;
 font-size:10px;
@@ -175,14 +245,15 @@ height: 100%;
 @media only screen and (max-width: 479px) {
 
 body {
-    background: url('bgmx600.png') no-repeat top center; /* Change background image to bg.png and fix its vertical position */
-    background-size: cover; /* Ensure the background image covers the entire page */
     margin: 0;
     padding: 0;
     width: auto !important;
-    min-width:320px;
+    min-width: 320px;
 }
 
+.bg {
+    background-image: url('bgmx600.png');
+}
 
 .wrapper {
     display: flex;
@@ -220,14 +291,15 @@ height:100%;
 @media only screen and (min-width: 480px) {
 
 body {
-    background: url('bgmx600.png') no-repeat top center; /* Change background image to bg.png and fix its vertical position */
-    background-size: cover; /* Ensure the background image covers the entire page */
     margin: 0;
     padding: 0;
     width: auto !important;
-    min-width:320px;
+    min-width: 320px;
 }
 
+.bg {
+    background-image: url('bgmx600.png');
+}
 
 .wrapper {
     display: flex;
@@ -264,12 +336,14 @@ height:100%;
 @media only screen and (min-width: 720px) {
 
 body {
-    background: url('bgmn600.png') no-repeat top center;
-    background-size: cover;
     margin: 0;
     padding: 0;
     width: auto !important;
-    min-width:320px;
+    min-width: 320px;
+}
+
+.bg {
+    background-image: url('bgmn600.png');
 }
 
 .wrapper {
@@ -317,14 +391,15 @@ flex: 1 1 auto;
 @media only screen and (min-width: 1025px) {
 
 body {
-    background: url('bg.png') no-repeat top center; /* Change background image to bg.png and fix its vertical position */
-    background-size: cover; /* Ensure the background image covers the entire page */
     margin: 0;
     padding: 0;
     width: auto !important;
-    min-width:320px;
+    min-width: 320px;
 }
 
+.bg {
+    background-image: url('bg.png');
+}
 
 .wrapper {
     display: flex;
