@@ -47,7 +47,7 @@ body {
     height: 150px; /* Increase height */
     border-radius: 50%; /* Make the image a circle */
     border: 10px solid #9F0029; /* Add a border */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a shadow */
     margin-bottom: 10px;
 }
 
