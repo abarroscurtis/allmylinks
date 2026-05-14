@@ -44,14 +44,11 @@ body {
 .profile-pic {
     background: url('profile2.png') no-repeat center center;
     background-size: cover;
-
     width: 155px;
     height: 155px;
-
     border-radius: 50%;
     border: 5px solid #9F0029;
-
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
     margin-bottom: 10px;
 }
 
