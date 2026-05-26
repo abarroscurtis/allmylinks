@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 
     <style>
-        /* FIX BACKGROUND (this is the key issue) */
+        /* Background */
         .bg {
             position: fixed;
             top: 0;
@@ -20,11 +20,18 @@
             z-index: -1;
         }
 
-        /* Override layout for form page (no left/right split) */
+        /* Make page fill viewport */
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: hidden; /* removes page scrollbar */
+        }
+
         .wrapper {
             display: flex;
             width: 100%;
-            padding: 50px 0;
+            height: 100vh;
+            padding: 20px 0;
         }
 
         .left {
@@ -35,26 +42,31 @@
             width: 100%;
             display: flex;
             justify-content: center;
+            align-items: stretch;
         }
 
-        /* Form container */
+        /* Main container becomes full height */
         .form-container {
             background-color: rgba(255, 255, 255, 0.85);
-            padding: 30px;
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
             text-align: center;
             width: 900px;
             max-width: calc(100% - 40px);
+
+            display: flex;
+            flex-direction: column;
+            height: calc(100vh - 40px);
         }
 
-        /* Home button matches site buttons (NOT full width) */
+        /* Home button */
         .home-button {
             display: inline-block;
             background-color: #72001D;
             color: #fff;
             padding: 10px 20px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             border-radius: 5px;
             text-decoration: none;
             font-family: Verdana, sans-serif;
@@ -66,36 +78,42 @@
             background-color: #4F0014;
         }
 
-        /* iframe */
-        .form-frame {
-            width: 100%;
-            height: 1200px;
-            border: none;
-        }
-
         h1 {
             font-family: Georgia, serif;
+            margin: 5px 0 10px 0;
+        }
+
+        /* KEY FIX: iframe fills remaining space */
+        .form-frame {
+            width: 100%;
+            flex: 1;
+            border: none;
         }
 
         #footnote {
             font-size: 10px;
-            margin-top: 20px;
+            margin-top: 10px;
             color: #666;
         }
 
-        /* Mobile fix */
+        /* Mobile */
         @media only screen and (max-width: 720px) {
+            body {
+                overflow: auto; /* allow scroll on small screens */
+            }
+
             .wrapper {
-                padding: 20px;
+                height: auto;
+                padding: 10px;
             }
 
             .form-container {
-                width: 100%;
-                padding: 20px;
+                height: auto;
             }
 
             .form-frame {
-                height: 1400px;
+                height: 80vh;
+                flex: none;
             }
         }
     </style>
