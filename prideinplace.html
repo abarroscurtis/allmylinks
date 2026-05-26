@@ -80,7 +80,46 @@
             .form-container {
                 height: 90vh; /* better on mobile */
             }
+
         }
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+            
+@media (max-width: 720px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .wrapper {
+        padding: 20px;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .right {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .form-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+        overflow-x: hidden;
+    }
+
+    .form-frame {
+        width: 100%;
+        border: none;
+    }
+}
     </style>
 </head>
 
