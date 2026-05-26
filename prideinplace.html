@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pride in Place | Balchder Bro</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* FIX BACKGROUND (this is the key issue) */
+        .bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('bgmx600.png') repeat-x top center;
+            background-size: auto;
+            z-index: -1;
+        }
+
+        /* Override layout for form page (no left/right split) */
+        .wrapper {
+            display: flex;
+            width: 100%;
+            padding: 50px 0;
+        }
+
+        .left {
+            width: 0;
+        }
+
+        .right {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Form container */
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            width: 900px;
+            max-width: calc(100% - 40px);
+        }
+
+        /* Home button matches site buttons (NOT full width) */
+        .home-button {
+            display: inline-block;
+            background-color: #72001D;
+            color: #fff;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-family: Verdana, sans-serif;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: background-color 0.3s;
+        }
+
+        .home-button:hover {
+            background-color: #4F0014;
+        }
+
+        /* iframe */
+        .form-frame {
+            width: 100%;
+            height: 1200px;
+            border: none;
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+        }
+
+        #footnote {
+            font-size: 10px;
+            margin-top: 20px;
+            color: #666;
+        }
+
+        /* Mobile fix */
+        @media only screen and (max-width: 720px) {
+            .wrapper {
+                padding: 20px;
+            }
+
+            .form-container {
+                width: 100%;
+                padding: 20px;
+            }
+
+            .form-frame {
+                height: 1400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="wrapper">
+
+    <div class="left"></div>
+
+    <div class="right">
+
+        <div class="form-container">
+
+            <a href="index.html" class="home-button">
+                Home | Hafan
+            </a>
+
+            <h1>Pride in Place | Balchder Bro</h1>
+
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSdTRrtg1C_Si7sQ-ONP8H-LhaOV8IcbtyRLlLpXfl1SQB2K7w/viewform?embedded=true"
+                class="form-frame">
+            </iframe>
+
+            <p id="footnote">
+                Promoted by Alex Barros-Curtis at Transport House, 1 Cathedral Road,
+                Riverside, Cardiff, CF11 9SD.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
