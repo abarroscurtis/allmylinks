@@ -221,14 +221,14 @@ text-transform: underline;
 #text-lists {
 font-size:1em;
 text-align: left;
-text-transform:underline;
+text-transform:none;
 color: #9F0029;
 margin-bottom: 20px;
 font-family: Georgia, serif; /* Change bio font to Georgia */
 line-height:1.5;
 }
 
-#text-lists a {
+#text-lists a:hover {
 text-transform:underline;
 color: #9F0029;
 }
@@ -241,11 +241,11 @@ height: 100%;
 }
 
 #text-lists li {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 
-#footnote a {
+#footnote {
 color:#9F0029;
 text-transform: none;
 text-decoration: none;
