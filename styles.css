@@ -244,6 +244,16 @@ height: 100%;
     margin-bottom: 12px;
 }
 
+
+#footnoe a {
+color:#9F0029;
+text-transform: none;
+}
+
+#footnote a:hover {
+text-transform: underline;
+}
+
 /* Mobile Phones */
 @media only screen and (max-width: 479px) {
 
