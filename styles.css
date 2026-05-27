@@ -217,6 +217,9 @@ text-transform: none;
 text-transform: underline;
 }
 
+#text-lists
+color: #9F0029;
+}
 
 #text-lists a {
 font-size:1em;
@@ -253,6 +256,7 @@ text-decoration: none;
 
 #footnote a:hover {
 text-transform: underline;
+text-decoration: underline;    
 }
 
 /* Mobile Phones */
