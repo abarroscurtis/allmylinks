@@ -242,6 +242,7 @@ height: 100%;
 
 #text-lists li {
     margin-bottom: 10px;
+    padding-left:10px;
     color:#9F0029;
 }
 
