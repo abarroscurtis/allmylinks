@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking | Bancio</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* BACKGROUND */
+        .bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('bgmx600.png') repeat-x top center;
+            z-index: -1;
+        }
+
+        /* Prevent overflow */
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Desktop layout */
+        .wrapper {
+            display: flex;
+            width: 100%;
+            padding: 50px 0;
+        }
+
+        .left {
+            width: 0;
+        }
+
+        .right {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Main container */
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            width: 900px;
+            max-width: calc(100% - 40px);
+        }
+
+        /* Button */
+        .home-button {
+            display: inline-block;
+            width: auto;              /* IMPORTANT */
+            max-width: fit-content;   /* IMPORTANT */
+            background-color: #72001D;
+            color: #fff;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-family: Verdana, sans-serif;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            white-space: nowrap;
+        }
+
+        .home-button:hover {
+            background-color: #4F0014;
+        }
+
+        /* Header */
+        h1 {
+            font-family: Georgia, serif;
+            font-size: 2em;   /* scalable */
+            line-height: 1.2;
+            margin-top: 0;
+        }
+
+        /* iframe */
+        .form-frame {
+            width: 100%;
+            height: 1200px;
+            border: none;
+        }
+
+        #footnote {
+            font-size: 10px;
+            margin-top: 20px;
+            color: #666;
+        }
+
+        /* =========================
+           MOBILE + TABLET
+           ========================= */
+        @media only screen and (max-width: 720px) {
+
+            html,
+            body {
+                height: 100%;
+                overflow-x: hidden;
+            }
+
+            .wrapper {
+                padding: 0;
+                margin: 0;
+                min-height: 100vh;
+            }
+
+            .right {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            .form-container {
+                width: 100%;
+                max-width: 100%;
+                margin: 0;
+                padding: 15px;
+                border-radius: 0;
+
+                height: 100vh;
+
+                display: flex;
+                flex-direction: column;
+            }
+
+            /* KEEP BUTTON NORMAL WIDTH */
+            .home-button {
+                width: auto;
+                align-self: center;
+            }
+
+            /* SMALLER RESPONSIVE HEADER */
+            h1 {
+                font-size: 1.5em;
+                margin-bottom: 15px;
+            }
+
+            /* iframe fills remaining space */
+            .form-frame {
+                flex: 1;
+                height: auto;
+            }
+
+            #footnote {
+                margin-top: 10px;
+                margin-bottom: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="wrapper">
+
+    <div class="left"></div>
+
+    <div class="right">
+
+        <div class="form-container">
+
+            <a href="index.html" class="home-button">
+                Home | Hafan
+            </a>
+
+            <h1>Banking | Bancio</h1>
+
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSdqI4AC3GO56yYVHFOWOPAhCoW_v2JS5rjwunMDKndPi7zi7A/viewform?embedded=true" class="form-frame">
+            </iframe>
+
+            <p id="footnote">
+                Promoted by Alex Barros-Curtis at Transport House, 1 Cathedral Road,
+                Riverside, Cardiff, CF11 9SD.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
