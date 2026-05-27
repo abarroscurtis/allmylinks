@@ -240,7 +240,9 @@ padding:0;
 height: 100%;
 }
 
-
+#text-lists li {
+    margin-bottom: 12px;
+}
 
 /* Mobile Phones */
 @media only screen and (max-width: 479px) {
