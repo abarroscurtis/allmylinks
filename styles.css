@@ -248,6 +248,7 @@ height: 100%;
 #footnote a {
 color:#9F0029;
 text-transform: none;
+text-decoration: none;
 }
 
 #footnote a:hover {
